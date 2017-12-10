@@ -1,4 +1,4 @@
-package com.blackbutterfly.mytab;
+package com.blackbutterfly.mytab.Main;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,7 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import static com.blackbutterfly.mytab.R.id.addTitle_button;
+import com.blackbutterfly.mytab.Plan.AddTitleActivity;
+import com.blackbutterfly.mytab.R;
 
 /**
  * Created by samsung on 2017-11-17.
@@ -37,7 +38,7 @@ public class ListFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) { //레이아웃을 인플레이터 할수 있게하는 메소드
         final ViewGroup rootView   = (ViewGroup) inflater.inflate (R.layout.fragment_list, container, false); // false는 바로 붙이지 않고, 동작할때만 붙일 수있게
 
-        Button BtnAddTitle = (Button) rootView.findViewById(addTitle_button);
+        Button BtnAddTitle = (Button) rootView.findViewById(R.id.btnAddPlan);
         BtnAddTitle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.blackbutterfly.mytab.MainActivity;
+import com.blackbutterfly.mytab.Main.MainActivity;
 import com.blackbutterfly.mytab.Network.APINetwork;
 import com.blackbutterfly.mytab.Network.ApplicationController;
 import com.blackbutterfly.mytab.R;
@@ -28,17 +28,17 @@ public class LoginActivty extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login_activty);
+        setContentView(R.layout.activity_login);
         network = ApplicationController.getInstance().getApiNetwork();
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        idText = (EditText)findViewById(R.id.idText);
-        passwordText = (EditText)findViewById(R.id.passwordText);
+        idText = (EditText)findViewById(R.id.etId);
+        passwordText = (EditText)findViewById(R.id.etPassword);
 
         idText.setText("whdqhd5402@gmail.com");
         passwordText.setText("123123");
 
-        loginButton = (Button) findViewById(R.id.Loginbtn);
+        loginButton = (Button) findViewById(R.id.btnLogin);
         loginButton.setOnClickListener(new View.OnClickListener() {
                 @Override
             public void onClick(View v) {
@@ -48,7 +48,7 @@ public class LoginActivty extends AppCompatActivity {
             }
         });
 
-        SignupButton = (Button) findViewById(R.id.Signbtn);
+        SignupButton = (Button) findViewById(R.id.btnSignup);
         SignupButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

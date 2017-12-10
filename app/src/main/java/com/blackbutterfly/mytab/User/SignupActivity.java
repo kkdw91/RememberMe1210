@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 
-import com.blackbutterfly.mytab.MainActivity;
+import com.blackbutterfly.mytab.Main.MainActivity;
 import com.blackbutterfly.mytab.R;
 
 public class SignupActivity extends AppCompatActivity {
@@ -20,7 +20,7 @@ public class SignupActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_signup);
 
-        Button signCompleteButton = (Button) findViewById(R.id.button3);
+        Button signCompleteButton = (Button) findViewById(R.id.btnSignup);
 
         signCompleteButton.setOnClickListener(new View.OnClickListener() {
             @Override

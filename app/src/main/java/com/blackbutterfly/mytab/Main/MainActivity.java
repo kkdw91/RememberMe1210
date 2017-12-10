@@ -1,4 +1,4 @@
-package com.blackbutterfly.mytab;
+package com.blackbutterfly.mytab.Main;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.widget.LinearLayout;
+
+import com.blackbutterfly.mytab.R;
 
 public class MainActivity extends AppCompatActivity {
     CurrentFragment currentFragment;
